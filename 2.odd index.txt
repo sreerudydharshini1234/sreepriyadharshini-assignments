@@ -1,0 +1,29 @@
+Odd Index
+package week1.javaday3;
+
+public class OddIndex {
+	public static void main(String[] args) {
+		String text="changeme";
+		 char[] array = text.toCharArray(); 
+		for(int i=0;i<text.length();i++)
+		{
+			
+				 System.out.println(array[i]); 
+				 }
+				 
+		}
+		
+		
+	}
+		
+	//odd index i have not done	
+output:
+c
+h
+a
+n
+g
+e
+m
+e
+
