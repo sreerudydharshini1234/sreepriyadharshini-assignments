@@ -1,0 +1,74 @@
+package week1.javaday3;
+
+import java.util.Arrays;
+
+public class Arraysort {
+
+
+	public static void main(String[] args) {
+		String text1="stops";
+		String text2="potss";
+		
+		//length of both strings
+		
+	    int length=text1.length();
+		System.out.println("Length of String1 :" +length );
+		int length1=text2.length();
+		System.out.println("Length of String2 :" +length1);
+		
+		//To check both strings are equal in length
+		if(length==length1)
+		{
+			System.out.println("Both strings are equal in length");
+		}
+		
+		//String to Sequence of character in an ascending sort
+		
+		char[] array=text1.toCharArray();
+		System.out.println("Character of text1 in ascending sort");
+		Arrays.sort(array);
+	    for (int i=0;i<text1.length();i++)
+		{
+		System.out.println(array[i]);	
+		}
+	    
+	   char[] array1=text2.toCharArray();
+	   System.out.println("Character of text2 in ascending sort");
+	   Arrays.sort(array1);
+      for (int i=0;i<text1.length();i++)
+	   {
+	      System.out.println(array1[i]);	
+	   }
+      
+     //Check both the array has same value
+             if(array.length==array1.length)
+             {
+            	 System.out.println("Both arrays are equal");
+            	 
+             }
+             else
+             {
+            	 System.out.println("Both arrays are not equal");
+             }
+      
+	}
+
+}
+
+output:
+Length of String1 :5
+Length of String2 :5
+Both strings are equal in length
+Character of text1 in ascending sort
+o
+p
+s
+s
+t
+Character of text2 in ascending sort
+o
+p
+s
+s
+t
+Both arrays are equal
